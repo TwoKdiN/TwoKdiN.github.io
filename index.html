@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <title>Κατσίρης Κωνσταντίνος-Νικόλαος</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>Καλώς ήρθατε στην προσωπική μου σελίδα!</h1>
+    <hr>
+    <div>
+        <h2>ΒΙΟΓΡΑΦΙΚΟ</h2>
+        <hr>
+        <img src="photo/Untitled-1.jpg"
+            alt="Σε αυτή την εικόνα εμφανίζεται ο δημιουργοός της σελίδας Κωνσταντίνος-Νικόλαος Κατσίρης" width="200">
+    </div>
+    <hr>
+    <div>
+        <p>Είμαι ο <b>Κωνσταντίνος-Νικόλαος Κατσίρης</b> ενεργός φοιτητής στο πανεπιστήμιο Πατρών στο τμήμα Μηχανικών
+            Η/Υ
+            και
+            Πληροφορικής.
+        </p>
+
+
+        <p> Γεννημένος 4 Μαρτίου του 1997 είμαι ένας άνθρωπος <b>κοινωνικός, ευδιάθετος και αρκετά συνεργάσιμος</b>,
+            αυτό
+            οφείλεται
+            και σε παλαιότερη θέση εργασίας που είχα στο τομέα της εστίασης.
+        </p>
+
+        <p> Έχω γνώσεις επάνω στη φωτογραφία και στο <i>Photoshop</i> που μπορεί να βοηθήσει στη δημιουργία ιστότοπων
+            που
+            είναι και
+            ένα αντικείμενο του οποίου κατέχω κάποιες βασικές γνώσεις δηλαδή <b><i>HTML, JAVASCRIPT, CSS και
+                    PHP</i></b>.
+            Ακόμα έχω
+            βάσεις και στο τομέα του <b>οντοκεντρικού προγραμματισμού</b> (<i>π.χ. JAVA, C++</i>), της <b>γλώσσας C</b>
+            όπως
+            επίσης και των <b>βάσεων δεδομένων</b> (<i>π.χ. ΜySql</i>). Η ειδικότητα της πληροφορικής
+            είναι κάτι μου με εξιτάρει και θέλω πολύ να ασχοληθώ με αυτό.
+        </p>
+    </div>
+
+    <br><br>
+    <hr>
+
+    <div>
+        <h2><u>Γνώσεις/Εξειδίκευση</u></h2>
+        <ul>
+
+            <li>Οντοκεντρικός Προγραμματισμός
+            <ul>
+                <li>JAVA</li>
+                <li>C++</li>
+            </ul>
+            <br>
+        </li>
+            
+            <li>Προγραμματισμός σε Παγκόσμιο Ιστό
+            <ul>
+                <li>HTML</li>
+                <li>JAVASCRIPT</li>
+                <li>CSS</li>
+                <li>PHP</li>
+            </ul>
+            <br>
+        </li>
+            
+            <li>Βάσεις Δεδομένων
+            <ul>
+                <li>MySql</li>
+            </ul>
+            <br>
+        </li>
+            
+            <li>Διαδικαστικός Προγραμματισμός
+            <ul>
+                <li>C</li>
+            </ul>
+
+        </li>
+        </ul>
+    </div>
+
+    <br><br>
+    <hr>
+
+    <div>
+        <h2><u>Δημιουργία Λογαριασμού</u></h2>
+        <form action="/sendData" method="post">
+
+            <label for="txtUsername">Username:</label>
+            <input type="text" id="txtUsername" name="Όνομα Χρήστη" minlength="3" maxlength="20" required
+                placeholder="π.χ. admin"> (*)<br>
+            <br>
+            <label for="txtPassword">Password:</label>
+            <input type="password" id="txtPassword" name="Kωδικός Χρήστη" minlength="4" maxlength="10" required
+                pattern="[0-9a-zA-Z]{4,10}" autocomplete="on" placeholder="Εισαγωγή Κωδικού"> (*) <br>
+            <br>
+            <input type="submit" value="Αποστολή">
+            <input type="reset" value="Επαναφορά">
+
+            
+        </form>
+
+        <form action="/sendDataBySM" method="post">
+<br>
+            <h4>Ή δημιουργία λογαριασμού μέσω:</h4>
+
+            <label for="Instagram"></label>
+            <a href="https://www.instagram.com">Instagram</a>
+            <input type="radio" id="Instagram" name="SocialMedia" value="instagram">
+            
+            <br>
+            <label for="Facebook"></label>
+            <a href="https://www.facebook.com">Facebook</a>
+            <input type="radio" id="Facebook" name="SocialMedia" value="facebook">
+
+            <br>
+            <label for="Google"></label>
+            <a href="https://www.google.gr">Google</a>
+            <input type="radio" name="SocialMedia" id="Google" value="google">
+
+            <br><br>
+            <input type="submit" value="Αποστολή">
+            <input type="reset" value="Επαναφορά">
+        </form>
+
+        <h5>Τα στοιχεία με (*) είναι υποχρεωτικά! </h5>
+
+    </div>
+
+    <br><br>
+    <hr>
+
+    <div>
+        <h2><u>Φόρμα Επικοινωνίας & Αποστολή Σχολίων</u></h2>
+        <form action="/sendCommends">
+
+            <label for="txtName">Όνομα:</label>
+            <input type="text" id="txtName" name="Όνομα Χρήστη" minlength="3" maxlength="20"
+                placeholder="π.χ. Παύλος" required>(*) <br>
+
+            <br>
+            <label for="txtLastName">Επώνυμο: </label>
+            <input type="text" id="txtLastName" name="lastName" minlength="3" maxlength="30" placeholder="Π.χ. Ψούνης.."
+                required>(*)
+            <br>
+            <br>
+            <label for="txtCommends">Σχόλια:</label>
+            <textarea name="Commends" id="txtCommends" maxlength="300" rows="5" cols="25"
+                placeholder="Τα σχόλια σας.."></textarea>
+            <br>
+
+            <input type="submit" value="Αποστολή">
+            <input type="reset" value="Επαναφορά">
+
+            <h5>Τα στοιχεία με (*) είναι υποχρεωτικά! </h5>
+        </form>
+    </div>
+
+    <br><br>
+    <hr>
+
+    <div>
+        <h2><u>Ραντεβού</u></h2>
+        <h4>Παρακαλώ επιλέξτε την ημερομηνία και την ώρα που θέλετε να επικοινωνίσουμε</h4>
+
+        <form action="/sendDate">
+
+            <label for="txtDate">Ημερομηνία:</label>
+            <input type="date" name="date" id="txtDate" min="2023-10-10" value="2023-10-14" required>(*) <br>
+            <br>
+            <label for="txtTime">Time:</label>
+            <input type="time" name="time" id="txtTime" required>(*) <br>
+            <br>
+            <label for="txtNameLastName">Ονοματεπώνυμο:</label>
+            <input type="text" id="txtNameLastName" name="Name Last Name" required placeholder="π.χ. Παύλος Παυλόπουλος..." minlength="6" maxlength="35">(*)
+            <br><br>
+            <label for="txtEmail">email:</label>
+            <input type="email" id="txtEmail" name="email" required placeholder="aaa@zzz.kkk">(*)
+            <br><br>
+            <label for="CommendsDate">Παραθέστε σύντομα τα προβλήματα σας:</label>
+            <br>
+            <textarea name="Commends" id="CommendsDate" cols="30" rows="10"></textarea>
+
+
+            <h5>Τα στοιχεία με (*) είναι υποχρεωτικά! </h5>
+
+            <input type="submit" name="submit" id="/sendDate">
+
+        </form>
+<hr>
+        <h3>Προσωπικά Στοιχεία</h3>
+        <a href="mailto:kostas.katsiris@gmail.com">Mail Επικοινωνίας</a>: kostas.katsiris@gmail.com
+        <br>
+        <a href="tel:+306900000000">Τηλέφωνο Επικοινωνίας</a>: +306900000000
+        <br>
+    </div>
+
+    <br><br>
+    <hr>
+
+    <div>
+        <h5>My Social Media</h5>
+        <a href="https://www.instagram.com/2k_din/"><img src="photo/instagram.jpeg" alt="My instagram page"
+                width="40"></a>
+        <a href="https://www.facebook.com/profile.php?id=100013888760687"><img src="photo/facebook.png"
+                alt="My facebook page" width="40">
+        </a>
+    </div>
+
+    <hr>
+
+</body>
+
+</html>
+
+<!-- ????? τα br επιρρεαζουν καπου στη css ????? -->
+<!-- 112-128 γτ δεν με αφηνει να βαλω <a href="" ><input ...></a> -->
